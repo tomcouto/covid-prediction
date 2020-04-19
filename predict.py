@@ -31,4 +31,7 @@ forecast=model_cc.predict(future)
 
 # Format and show graph
 fig_Confirmed = model_cc.plot(forecast,xlabel = "Date",ylabel = "Deaths")
+fig_Confirmed.canvas.set_window_title('State Death 2 Month Forecast') # set window title
+plt.title(stateIn + ' Death Forecasting') # set title of graph
+plt.tight_layout() # set layout to fit labels
 plt.show()
